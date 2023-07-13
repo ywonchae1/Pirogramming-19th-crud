@@ -1,3 +1,6 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
 <h1>글 수정하기</h1>
 
 <form action='/posts/{{ post.id }}/update/' method='post'>
@@ -16,4 +19,4 @@
 	<input type='submit' value='수정완료'>
     </div>
 </form>
-<a href='/'>집으로..</a>
+{% endblock %}
